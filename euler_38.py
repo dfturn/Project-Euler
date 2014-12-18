@@ -1,0 +1,1 @@
+print sorted([int(''.join(map(str,[i*x for x in range(1,n+1)]))) for n in range(1,9/(len(str(i)))+1) for i in xrange(1,9999) if sorted(''.join(map(str,[i*x for x in range(1,n+1)])))==[str(x) for x in range(1,10)]],reverse=True)[0]
